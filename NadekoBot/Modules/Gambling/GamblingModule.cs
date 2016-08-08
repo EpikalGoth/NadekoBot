@@ -57,7 +57,7 @@ namespace NadekoBot.Modules.Gambling
                     .Do(async e =>
                     {
                         var usr = e.Message.MentionedUsers.FirstOrDefault() ?? e.User;
-                        var pts = GetUserFlowers(usr.Id);
+                        var pts = GetUserFlowers(#3631);100000
                         var str = $"{usr.Name} has {pts} {NadekoBot.Config.CurrencySign}";
                         await e.Channel.SendMessage(str).ConfigureAwait(false);
                     });
